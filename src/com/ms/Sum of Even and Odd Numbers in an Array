@@ -1,0 +1,37 @@
+
+import java.util.*;
+public class Main {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter size of array");
+        int evensum=0;
+        int oddsum=0;
+        int size = sc.nextInt();
+        int a[]= new int[size];
+        System.out.println("enter element of an array");
+        //input
+        for(int i=0;i<size;i++){
+
+            a[i] = sc.nextInt();
+        }
+//output
+        System.out.println(" odd no are:");
+        for(int i=0;i<size;i++){
+            if(a[i]%2!=0){
+                oddsum=oddsum+a[i];
+                System.out.println(a[i]);
+            }
+        }
+        System.out.println("sum: " +oddsum);
+        System.out.println(" even no are:");
+        for(int i=0;i<size;i++){
+            if(a[i]%2==0){
+                evensum=evensum+a[i];
+                System.out.println(a[i]);
+            }
+        }
+        System.out.println("sum: " +evensum);
+
+
+    }
+}
